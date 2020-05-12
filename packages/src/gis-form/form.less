@@ -1,0 +1,106 @@
+@err-msg-color: #ed4014;
+@side-color: #dbdbdb;
+// 所有表单元素都向内收缩
+.ivu-form-item {
+  padding: 4px;
+  margin-bottom: 0!important;
+  & .ivu-radio-group {
+    height: 30px;
+    line-height: 28px;
+  }
+}
+// title样式
+.gis-form-title {
+  background-color: #dbdbdb;
+  margin: 0;
+  width: 100% !important;
+  text-align: center;
+  font-weight: 600;
+  text-align: center;
+  line-height: 28px;
+  width: 100%;
+  padding: 0;
+}
+// label向右偏移10px
+.ivu-form-label-left .ivu-form-item-label {
+  text-align: left;
+  padding-left: 10px;
+}
+/* 表单显示边框 */
+.form-border {
+  & .ivu-form-item {
+    margin-bottom: 0;
+    padding: 4px;
+    border: 0.2px #ccc solid;
+    border-bottom: none;
+    border-right: none;
+  }
+}
+/* 错误消息提示气泡 */
+.form-poptip {
+  .ivu-form-item-error-tip {
+    z-index: 10;
+    position: absolute;
+    max-width: 250px;
+    background-color: @err-msg-color;
+    padding: 8px 12px;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    margin: 0;
+    border: 1px solid #fff;
+  }
+  .ivu-form-item-error-tip:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: solid;
+    border-width: 0 5px 5px;
+    border-bottom-color: @err-msg-color;
+    left: 40%;
+    bottom: 100%;
+    margin-left: -15px;
+  }
+}
+
+// step-form 样式
+.step-form {
+  flex-direction: column;
+}
+.form-step {
+  padding: 10px;
+  padding-left: 14px;
+  border-bottom: 0.2px solid @side-color;
+}
+.form-step-vertical {
+  width: 120px !important;
+  border-bottom: none;
+  border-right: 0.2px solid @side-color;
+}
+.step-form-content {
+  flex-direction: column;
+  display: flex;
+  flex: 1;
+  & .step-form-content--form {
+    /* Firefox */
+    height: -moz-calc(100% - 50px);
+    /* WebKit */
+    height: -webkit-calc(100% - 50px);
+    /* Opera */
+    height: -o-calc(100% - 50px);
+    /* Standard */
+    height: calc(100% - 50px);
+    overflow: auto;
+  }
+  & .step-form-content--buttons {
+    display: inline-flex;
+    justify-content: center;
+  }
+}
+// tag组竖直样式
+.vertical-tag {
+  display: flex;
+  flex-direction: column;
+  border-right: 0.2px solid @side-color;
+}

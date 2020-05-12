@@ -1,0 +1,73 @@
+/* 表单样式 */
+// .search-form-create {
+//   max-height: 90px;
+//   overflow-y: auto;
+// }
+.the-page .search-form-create .ivu-form-item {
+  margin-bottom: 12px;
+}
+.the-page .search-form-create .ivu-input-type-text .ivu-input,
+.the-page .search-form-create .ivu-select {
+  width: 140px;
+}
+/*  下面三个一个都不能少
+display
+width
+float
+*/ 
+.the-page  .search-form-create .ivu-col-span-24 {
+  display:inline-block;
+  width: unset ;
+  float: unset;
+}
+.the-page .search-form-create .__fc_h{
+  display:none !important;
+}
+
+.the-page .search-form-create .ivu-date-picker-editor .ivu-input {
+  width: 174px !important;   //刚好
+}
+
+
+.the-page  {
+  
+    .operation {
+      margin: 0vh 0 1vh 0;
+    }
+    .select-count {
+      font-weight: 600;
+      color: #40a9ff;
+    }
+    .select-clear {
+      margin-left: 10px;
+    }
+    .page {
+      margin-top: 2vh;
+    }
+    .drop-down {
+      font-size: 13px;
+      margin-left: 5px;
+    }
+  }
+  
+  .drawer-footer {
+    z-index: 10;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-top: 1px solid #e8e8e8;
+    padding: 10px 16px;
+    text-align: right;
+    background: #fff;
+  }
+
+.searchWindow {
+  padding: 10px!important;
+  & .searchWindow-buttons {
+    margin-top: 10px;
+    float: right;
+    margin-bottom: 10px;
+  }
+}
+  

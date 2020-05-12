@@ -1,0 +1,40 @@
+// 流程信息表单
+.process-form {
+  border: 0.2px solid #ccc;
+  border-top: none;
+  & .ivu-form-item-label {
+    width: 100% !important;
+    text-align: left !important;
+  }
+  & .ivu-form-item-content {
+    width: 100%;
+    display: contents;
+  }
+  & .process-submit {
+    padding: 5px;
+  }
+}
+
+.ivu-modal-body {
+  padding: 8px!important;
+}
+& .ivu-tabs-content-animated {
+  /* Firefox */
+  max-height: -moz-calc(100% - 35px);
+  /* WebKit */
+  max-height: -webkit-calc(100% - 35px);
+  /* Opera */
+  max-height: -o-calc(100% - 35px);
+  /* Standard */
+  max-height: calc(100% - 35px);
+  border: 0.2px solid #ccc!important;
+}
+.process-form-modal {
+  & .ivu-tabs {
+    height: 100%;
+  }
+
+  & .ivu-tabs-bar {
+    margin-bottom: 2px!important;
+  }
+}
